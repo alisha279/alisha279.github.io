@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Alisha</title>
+    <style>
+        html{
+    font-size: 20px;
+}
+         h1{background-color:blueviolet;
+color:black;
+    font-weight: 100;
+}
+img:hover{
+    height: 20rem;
+    width: 40rem;
+}
+
+li:nth-child(2n){
+    background-color: pink ;
+}
+li:nth-child(2n-1){
+    background-color:purple ;
+}
+a[href^="https"]{
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;/*it will remove a tag underline*/
+}
+a
+p::first-letter{
+    
+    font-size: 1.5em;
+}
+p{
+    background-color: antiquewhite;
+}
+/*direct*/
+div>h2{
+    background-color: rgb(242, 0, 255);
+    font-size: 50px;
+}
+div a{
+    text-decoration: none;
+    color:violet;
+    font-size: 30px;
+}
+#about,#education,#skills,#contact{
+    text-align:center;
+}
+footer{
+    text-align: center;
+    font-size: 2rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Alisha</h1>
+        <image src="https://www.shihoriobata.com/wp-content/uploads/2022/10/cat-with-sunglasses-drawing.jpg" alt="Image" width="400" height="300"></image>
+        <p><i>BSCS - 5th Semester</i></p>
+        <div>
+            <a href="#about">About Me</a> <hr>
+            <a href="#education">Education</a> <hr>
+            <a href="#skills">Skills</a> <hr>
+            <a href="#contact">Contact</a>
+        <hr>
+        </div>
+    </header>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <p>My name is Alisha, a BSCS student at 
+            <a href="https://qau.edu.pk/" >Quaid-i-Azam University</a>. 
+            I am passionate about technology and continuously working to improve my coding and problem-solving skills. 
+            My goal is to become proficient in software development and contribute to innovative projects.
+        </p>
+    </div>
+    <hr>
+
+    <div id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Computer Science (BSCS)</strong> – 
+            <a href="https://qau.edu.pk/" >Quaid-i-Azam University</a> (5th Semester)
+        </p>
+        <p>Completed Intermediate in Pre-Medical. Later, after clearing MDCAT and qualifying Mathematics, 
+            I transitioned to Computer Science to pursue my interest in programming and technology.
+        </p>
+    </div>
+    <hr>
+
+    <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+        </ul>
+    </div>
+    <hr>
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Contact no.: 000112233</p>
+    </div>
+    <hr>
+
+    <footer>
+        <p>Thank You</p>
+    </footer>
+
+</body>
+</html>
