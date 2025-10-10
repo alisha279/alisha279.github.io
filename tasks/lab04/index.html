@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Alisha</title>
+  <style>
+    :root {
+      --background-color: blueviolet;
+      --secondary-color: purple;
+      --highlight-color: pink;
+      --text-color: black;
+    }
+
+    html {
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f5ff;
+    }
+
+    h1, h2 {
+      color: var(--text-color);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      background-color: var(--background-color);
+      color: white;
+      font-weight: 500;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px auto 40px auto;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #about, #education, #skills, #contact {
+      text-align: center;
+      border: 2px solid var(--background-color);
+      border-radius: 10px;
+      padding: 15px;
+      margin: 40px auto;
+      width: 80%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: auto;
+    }
+    #about p {
+      color: #333;
+      line-height: 1.5;
+    }
+    div{
+        padding-top: 100px;
+    }
+    
+    div a {
+      text-decoration: none;
+      color: var(--background-color);
+      font-size: 1.2rem;
+      margin: 5px;
+    }
+
+    div > h2 {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    h2 + p {
+      font-style: italic;
+    }
+
+    p::first-letter {
+      font-size: 1.5em;
+      color: var(--secondary-color);
+    }
+
+    li:nth-child(2n) {
+      background-color: var(--highlight-color);
+    }
+    li:nth-child(2n-1) {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 10px;
+      margin: 0 auto;
+      width: 50%;
+      border: 2px solid var(--background-color);
+      border-radius: 12px;
+    }
+
+    a[href^="https"] {
+      color: white;
+      background-color: var(--background-color);
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    a[href^="https"]:hover {
+      opacity: 0.8;
+    }
+
+    .img-bg {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 420px;
+      height: 200px;
+      background-color: rgba(137, 43, 226, 0.3);
+      border-radius: 15px;
+      z-index: 0;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 15px;
+      border: 3px solid var(--background-color);
+      z-index: 1;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      height: 20rem;
+      width: 40rem;
+      opacity: 0.8;
+      z-index: 2;
+    }
+    
+    header {
+      position: relative;
+      padding-bottom: 50px; /* adds space so sections don’t collide */
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      background-color: var(--background-color);
+      padding: 10px;
+      border-top: 5px solid var(--secondary-color);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>About Alisha</h1>
+   
+        <div class="img-bg"></div>
+        <img src="https://www.shihoriobata.com/wp-content/uploads/2022/10/cat-with-sunglasses-drawing.jpg" alt="Image" width="400" height="300">
+    
+    <div >
+      <a href="#about">About Me</a> <hr>
+      <a href="#education">Education</a> <hr>
+      <a href="#skills">Skills</a> <hr>
+      <a href="#contact">Contact</a>
+      <hr>
+    </div>
+  </header>
+
+  <div id="about">
+    <h2>About Me</h2>
+    <p>My name is Alisha, a BSCS student at 
+      <a href="https://qau.edu.pk/">Quaid-i-Azam University</a>. 
+      I am passionate about technology and continuously working to improve my coding and problem-solving skills. 
+      My goal is to become proficient in software development and contribute to innovative projects.
+    </p>
+  </div>
+  <hr>
+
+  <div id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science in Computer Science (BSCS)</strong> – 
+      <a href="https://qau.edu.pk/">Quaid-i-Azam University</a> (5th Semester)
+    </p>
+    <p>Completed Intermediate in Pre-Medical. Later, after clearing MDCAT and qualifying Mathematics, 
+      I transitioned to Computer Science to pursue my interest in programming and technology.
+    </p>
+  </div>
+  <hr>
+
+  <div id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C++</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div id="contact">
+    <h2>Contact</h2>
+    <p>Contact no.: 000112233</p>
+  </div>
+  <hr>
+
+  <footer>
+    <p>Thank You</p>
+  </footer>
+</body>
+</html>
