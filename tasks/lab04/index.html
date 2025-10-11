@@ -17,9 +17,8 @@
       font-family: Arial, sans-serif;
       background-color: #f8f5ff;
     }
-    /*Grp selectors*/
+/*grouping , element selector*/
     h1, h2 {
-      color: var(--text-color);
       text-align: center;
       text-transform: uppercase;
     }
@@ -30,53 +29,43 @@
       font-weight: 500;
       border-radius: 10px;
       padding: 10px;
-      margin: 10px auto 40px auto;
+      margin: 10px auto 40px auto;/*10px space on top, 40px space at the bottom, and auto center the element horizontally.*/
       width: 80%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-
+/*sections, id selector*/
     #about, #education, #skills, #contact {
       text-align: center;
       border: 2px solid var(--background-color);
       border-radius: 10px;
       padding: 15px;
-      margin: 40px auto;
+      margin: 20px auto;
       width: 80%;
       background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       overflow: auto;
     }
-    #about p {
-      color: #333;
-      line-height: 1.5;
-    }
-    div{
-        padding-top: 100px;
-    }
-    
+    /*descendant*/
     div a {
       text-decoration: none;
       color: var(--background-color);
       font-size: 1.2rem;
-      margin: 5px;
     }
-
+    /*child selector*/
     div > h2 {
       background-color: var(--secondary-color);
       color: white;
-      padding: 8px;
+      padding: 10px;
       border-radius: 8px;
     }
-
+    /*adjacent/siblings*/
     h2 + p {
       font-style: italic;
     }
-
+   /*pseudo-element selector*/
     p::first-letter {
       font-size: 1.5em;
       color: var(--secondary-color);
     }
-
+    /*pseudo-class selector*/
     li:nth-child(2n) {
       background-color: var(--highlight-color);
     }
@@ -86,14 +75,14 @@
     }
 
     ul {
-      list-style-type: none;
+      list-style-type: none;/*removing bullets or numbers*/
       padding: 10px;
       margin: 0 auto;
       width: 50%;
       border: 2px solid var(--background-color);
       border-radius: 12px;
     }
-
+   /*attribute selector*/
     a[href^="https"] {
       color: white;
       background-color: var(--background-color);
@@ -101,17 +90,18 @@
       border-radius: 5px;
       transition: 0.3s;
     }
+       /*attribute selector ,pseudo-class selector */
     a[href^="https"]:hover {
       opacity: 0.8;
     }
-
+    /*class selector*/
     .img-bg {
       position: absolute;
       top: 120px;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-50%);/*to perfectly center bg-img */
       width: 420px;
-      height: 200px;
+      height: 320px;
       background-color: rgba(137, 43, 226, 0.3);
       border-radius: 15px;
       z-index: 0;
@@ -119,12 +109,12 @@
 
     img {
       display: block;
-      margin: 0 auto;
+      margin: auto;
       border-radius: 15px;
       border: 3px solid var(--background-color);
       z-index: 1;
       position: relative;
-      transition: 0.3s;
+      transition: 0.5s;
     }
 
     img:hover {
@@ -136,7 +126,7 @@
     
     header {
       position: relative;
-      padding-bottom: 50px; /* adds space so sections don’t collide */
+      padding-bottom: 100px; /* adds space so sections don’t collide */
     }
 
     footer {
@@ -208,4 +198,4 @@
     <p>Thank You</p>
   </footer>
 </body>
-</html>  
+</html>
