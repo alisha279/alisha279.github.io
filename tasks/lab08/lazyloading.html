@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazy Loading</title>
+    <style>
+        body{
+            background-color: black;
+           
+        }
+        img {
+            display: block;
+            width: 500px;
+            height: 500px;
+            margin: 20px auto;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+
+<img class="lazy"  src="login.jpeg" alt="Login page" > <br>
+<img class="lazy" data-src="signup.jpeg" data-alt="Signup page" ><br>
+<img class="lazy" data-src="home.jpeg" data-alt="Home" ><br>
+<img class="lazy" data-src="home2.jpeg" data-alt="Home" ><br>
+<img class="lazy" data-src="allproducts.jpeg" data-alt="All Products" ><br>
+<img class="lazy" data-src="products2.jpeg" data-alt="All Products" ><br>
+<img class="lazy" data-src="contact.jpeg" data-alt="Contact info" ><br>
+
+<script>
+function lazyLoad() {
+    let images = document.querySelectorAll("img[data-src]");
+
+    for (let img of images) {
+
+        if (img.offsetTop < (window.innerHeight + window.pageYOffset)) {
+
+            img.src = img.dataset.src;      
+            img.alt = img.dataset.alt;      
+            img.removeAttribute("data-src");
+
+        }
+    }
+}
+
+document.addEventListener("scroll", lazyLoad);
+lazyLoad();
+</script>
+
+</body>
+</html>
+
